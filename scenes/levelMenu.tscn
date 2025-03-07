@@ -1,0 +1,229 @@
+[gd_scene load_steps=7 format=3 uid="uid://b6r6njvyagl5g"]
+
+[ext_resource type="Texture2D" uid="uid://bpltxs7xupg5f" path="res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat.png" id="1_mbdla"]
+[ext_resource type="Texture2D" uid="uid://bvxxol105qhg7" path="res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat_Animated.png" id="2_5q2io"]
+[ext_resource type="FontFile" uid="uid://77u34i8xjkxe" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_jlkh4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_f6sjo"]
+texture = ExtResource("2_5q2io")
+region_rect = Rect2(32, 67, 32, 29)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7om8t"]
+texture = ExtResource("2_5q2io")
+region_rect = Rect2(0, 68, 32, 28)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_irqvx"]
+texture = ExtResource("2_5q2io")
+region_rect = Rect2(96, 64, 32, 32)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer"]
+layout_mode = 2
+texture = ExtResource("1_mbdla")
+region_rect = Rect2(128, 32, 96, 64)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(900, 500)
+layout_mode = 2
+size_flags_vertical = 8
+mouse_filter = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+1"
+
+[node name="Button2" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+2"
+
+[node name="Button3" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+3"
+
+[node name="Button4" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+4"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+5"
+
+[node name="Button2" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+6"
+
+[node name="Button3" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+7"
+
+[node name="Button4" type="Button" parent="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(150, 150)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/hover = SubResource("StyleBoxTexture_f6sjo")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_7om8t")
+theme_override_styles/normal = SubResource("StyleBoxTexture_irqvx")
+text = "LEVEL
+8"
+
+[node name="margen label" type="MarginContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 35
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/margen label"]
+custom_minimum_size = Vector2(300, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+size_flags_stretch_ratio = 0.0
+mouse_filter = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="MarginContainer/margen label/MarginContainer2"]
+layout_mode = 2
+texture = ExtResource("1_mbdla")
+region_rect = Rect2(288, 134, 64, 20)
+
+[node name="Label" type="Label" parent="MarginContainer/margen label/MarginContainer2/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 33.0
+offset_right = -32.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_jlkh4")
+theme_override_font_sizes/font_size = 25
+text = "LEVELS"
+horizontal_alignment = 1
+vertical_alignment = 1
