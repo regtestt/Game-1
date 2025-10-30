@@ -1,10 +1,11 @@
-[gd_scene load_steps=27 format=3 uid="uid://b57jr3fa6cy5w"]
+[gd_scene load_steps=28 format=3 uid="uid://b57jr3fa6cy5w"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_554js"]
 [ext_resource type="Texture2D" uid="uid://bwrmagxh5bp27" path="res://assets/sprites/world_tileset.png" id="2_x8ect"]
 [ext_resource type="PackedScene" uid="uid://crl7vxdsoriqh" path="res://scenes/player.tscn" id="3_wv6ug"]
 [ext_resource type="FontFile" uid="uid://dui7aab8b2ady" path="res://assets/fonts/PixelOperator8.ttf" id="4_yehxb"]
 [ext_resource type="PackedScene" uid="uid://bd467j1r2wqum" path="res://scenes/platform_1.tscn" id="5_155ba"]
+[ext_resource type="Script" path="res://scripts/coins.gd" id="6_b6fg0"]
 [ext_resource type="PackedScene" uid="uid://x6vxnr4vptrm" path="res://scenes/coin.tscn" id="6_t5rn0"]
 [ext_resource type="PackedScene" uid="uid://cdrvtkfkndm7a" path="res://scenes/killzone.tscn" id="7_ancn3"]
 [ext_resource type="PackedScene" uid="uid://d66j6bmt82u0" path="res://scenes/enemy.tscn" id="8_4yggg"]
@@ -395,6 +396,7 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="Label" type="Label" parent="Player"]
+z_index = 1
 offset_left = -43.0
 offset_top = -55.0
 offset_right = 42.0
@@ -462,6 +464,7 @@ libraries = {
 autoplay = "RESET"
 
 [node name="coins" type="Node" parent="."]
+script = ExtResource("6_b6fg0")
 
 [node name="coin" parent="coins" instance=ExtResource("6_t5rn0")]
 position = Vector2(-185, 21)

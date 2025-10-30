@@ -23,7 +23,7 @@ region = Rect2(72, 24, 24, 24)
 [sub_resource type="SpriteFrames" id="SpriteFrames_afjpd"]
 animations = [{
 "frames": [{
-"duration": 1.0,
+"duration": 2.0,
 "texture": SubResource("AtlasTexture_wkssu")
 }, {
 "duration": 1.0,
@@ -50,7 +50,6 @@ script = ExtResource("1_6r3h3")
 sprite_frames = SubResource("SpriteFrames_afjpd")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.129849
 
 [node name="killzone" parent="." instance=ExtResource("2_nyl7g")]
 collision_mask = 2
