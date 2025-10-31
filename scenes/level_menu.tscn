@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://b6r6njvyagl5g"]
+[gd_scene load_steps=8 format=3 uid="uid://bm858imgxf6vl"]
 
 [ext_resource type="Texture2D" uid="uid://bpltxs7xupg5f" path="res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat.png" id="1_mbdla"]
+[ext_resource type="Script" path="res://scripts/level_menu.gd" id="1_xjayq"]
 [ext_resource type="Texture2D" uid="uid://bvxxol105qhg7" path="res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat_Animated.png" id="2_5q2io"]
 [ext_resource type="FontFile" uid="uid://77u34i8xjkxe" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_jlkh4"]
 
@@ -23,6 +24,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_xjayq")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -227,3 +229,6 @@ theme_override_font_sizes/font_size = 25
 text = "LEVELS"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MarginContainer/MarginContainer/VBoxContainer/HBoxContainer/Button2" to="." method="_on_button_2_pressed"]

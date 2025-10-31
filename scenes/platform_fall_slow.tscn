@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://scripts/platform_fall_slow.gd" id="2_ebi62"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_82kw5"]
-size = Vector2(27, 6)
+size = Vector2(27, 12)
 
 [node name="platform_fall_slow" instance=ExtResource("1_g2alp")]
 script = ExtResource("2_ebi62")
@@ -16,7 +16,7 @@ position = Vector2(0, 0)
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" index="0"]
-position = Vector2(-0.5, -4)
+position = Vector2(-0.5, -1)
 shape = SubResource("RectangleShape2D_82kw5")
 
 [node name="RayCast2D" type="RayCast2D" parent="." index="3"]
