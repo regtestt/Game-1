@@ -6,9 +6,11 @@ extends Node
 var m : int = 0
 var s : int = 0
 var ms : int = 0
-	
+
 # Called when the node enters the scene tree for the first time.	
 func _process(_delta):
+##	print(label.visible)
+##	print(coins.noCoins())
 	
 	label.text = 'TU TIEMPO FUE: ' + str(m) + ":" + str(s - m*60) + ":" + str(ms - s*1000)		
 	if !coins.noCoins(): 
@@ -16,10 +18,8 @@ func _process(_delta):
 		ms = Time.get_ticks_msec()
 		s = ms/1000
 		m = s/60
-
-	if coins.noCoins:
+	else:
 		label.visible = true
-		
 	
 
 	

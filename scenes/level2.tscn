@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://bwrmagxh5bp27" path="res://assets/sprites/world_tileset.png" id="2_pldah"]
 [ext_resource type="PackedScene" uid="uid://crl7vxdsoriqh" path="res://scenes/player.tscn" id="3_6l4ho"]
 [ext_resource type="FontFile" uid="uid://dui7aab8b2ady" path="res://assets/fonts/PixelOperator8.ttf" id="4_5vgno"]
+[ext_resource type="PackedScene" uid="uid://dpjys26pq2pv7" path="res://scenes/platform_fall_slow.tscn" id="5_chgsu"]
 [ext_resource type="PackedScene" uid="uid://x6vxnr4vptrm" path="res://scenes/coin.tscn" id="5_q2ywo"]
+[ext_resource type="Script" path="res://scripts/coins.gd" id="6_knrre"]
 [ext_resource type="PackedScene" uid="uid://cdrvtkfkndm7a" path="res://scenes/killzone.tscn" id="6_pjofm"]
-[ext_resource type="PackedScene" uid="uid://d66j6bmt82u0" path="res://scenes/enemy.tscn" id="7_kkc5q"]
-[ext_resource type="Script" path="res://scripts/enemy_vertical.gd" id="8_v4fws"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_yo2ft"]
 tile_data = PackedInt32Array(0, 393217, 1, 65536, 393217, 1, 131072, 393217, 1, 196608, 393217, 1, 262144, 524289, 0, 327680, 393217, 1, 1, 393217, 1, 65537, 393217, 1, 131073, 393217, 1, 196609, 393217, 1, 262145, 524289, 0, 327681, 393217, 1, 2, 524289, 0, 65538, 524289, 0, 131074, 524289, 0, 196610, 524289, 0, 262146, 393217, 1, 327682, 393217, 1, 3, 393217, 1, 65539, 393217, 1, 131075, 393217, 1, 196611, 524289, 0, 262147, 393217, 1, 327683, 393217, 1, 4, 393217, 1, 65540, 524289, 1, 131076, 524289, 1, 196612, 524289, 0, 262148, 393217, 1, 327684, 393217, 1, 5, 393217, 1, 65541, 393217, 1, 131077, 393217, 1, 196613, 524289, 0, 262149, 524289, 1, 327685, 393217, 1, 6, 393217, 1, 65542, 393217, 1, 131078, 524289, 0, 196614, 393217, 1, 262150, 393217, 1, 327686, 524289, 0, 7, 393217, 1, 65543, 524289, 0, 131079, 524289, 0, 196615, 393217, 1, 262151, 393217, 1, 327687, 393217, 1, 8, 393217, 1, 65544, 393217, 1, 131080, 393217, 1, 196616, 393217, 1, 262152, 524289, 1, 327688, 393217, 1, 9, 393217, 1, 65545, 393217, 1, 131081, 393217, 1, 196617, 393217, 1, 262153, 524289, 1, 327689, 393217, 1, 10, 393217, 1, 65546, 393217, 1, 131082, 393217, 1, 196618, 524289, 1, 262154, 393217, 1, 327690, 393217, 1, 11, 393217, 1, 65547, 393217, 1, 131083, 393217, 1, 196619, 524289, 1, 262155, 393217, 1, 327691, 393217, 1, 12, 393217, 1, 65548, 524289, 0, 131084, 524289, 1, 196620, 393217, 1, 262156, 393217, 1, 327692, 393217, 1, 13, 393217, 1, 65549, 393217, 1, 131085, 524289, 0, 196621, 524289, 0, 262157, 393217, 1, 327693, 393217, 1, 14, 393217, 1, 65550, 524289, 1, 131086, 393217, 1, 196622, 393217, 1, 262158, 524289, 0, 327694, 393217, 1, 15, 393217, 1, 65551, 524289, 1, 131087, 393217, 1, 196623, 393217, 1, 262159, 393217, 1, 327695, 393217, 1, 16, 393217, 1, 65552, 393217, 1, 131088, 393217, 1, 196624, 393217, 1, 262160, 393217, 1, 327696, 393217, 1)
@@ -222,6 +222,7 @@ limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="Label" type="Label" parent="Player"]
+z_index = 1
 offset_left = -43.0
 offset_top = -55.0
 offset_right = 42.0
@@ -231,7 +232,11 @@ theme_override_font_sizes/font_size = 8
 
 [node name="platforms" type="Node" parent="."]
 
+[node name="platform_fall_slow" parent="platforms" instance=ExtResource("5_chgsu")]
+position = Vector2(195, -105)
+
 [node name="coins" type="Node" parent="."]
+script = ExtResource("6_knrre")
 
 [node name="coin" parent="coins" instance=ExtResource("5_q2ywo")]
 position = Vector2(186, -47)
@@ -244,10 +249,3 @@ collision_mask = 2
 shape = SubResource("WorldBoundaryShape2D_ro7y5")
 
 [node name="enemies" type="Node2D" parent="."]
-
-[node name="enemy" parent="enemies" instance=ExtResource("7_kkc5q")]
-position = Vector2(8.00001, 3)
-script = ExtResource("8_v4fws")
-
-[node name="enemy2" parent="enemies" instance=ExtResource("7_kkc5q")]
-position = Vector2(-152, -45)
