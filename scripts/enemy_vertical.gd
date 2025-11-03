@@ -8,12 +8,14 @@ var rot := 90
 @onready var ray_cast_right: RayCast2D = $"RayCast Right"
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
+
+func _ready() -> void:
+    ray_cast_left.rotate(rot)
+	ray_cast_right.rotate(rot)
+    animated_sprite_2d.rotate(rot)
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	ray_cast_left.rotate(rot)
-	ray_cast_right.rotate(rot)
-	animated_sprite_2d.rotate(rot)
-
 	if ray_cast_right.is_colliding():
 		dir = -1
 		animated_sprite_2d.flip_v = true
