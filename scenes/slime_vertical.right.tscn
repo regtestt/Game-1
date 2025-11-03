@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://emmgqoje8rkp"]
+
+[ext_resource type="PackedScene" uid="uid://d66j6bmt82u0" path="res://scenes/enemy.tscn" id="1_rjce7"]
+[ext_resource type="Script" path="res://scripts/enemy_vertical.gd" id="2_6oxfp"]
+
+[node name="slime" instance=ExtResource("1_rjce7")]
+script = ExtResource("2_6oxfp")
+
+[node name="AnimatedSprite2D" parent="." index="0"]
+rotation = -1.5708
+
+[node name="CollisionShape2D" parent="killzone" index="1"]
+position = Vector2(6, 0)
+rotation = 1.5708
+
+[node name="RayCast Right" parent="." index="2"]
+position = Vector2(6, 0)
+rotation = 1.5708
+
+[node name="RayCast Left" parent="." index="3"]
+position = Vector2(6, 0)
+rotation = 1.5708
+target_position = Vector2(-7, 0)

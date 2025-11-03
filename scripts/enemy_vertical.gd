@@ -1,25 +1,19 @@
 extends Node2D
 
-var speed := 60
-var dir := 1
-var rot := 90
 
 @onready var ray_cast_left: RayCast2D = $"RayCast Left"
 @onready var ray_cast_right: RayCast2D = $"RayCast Right"
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 
-
-func _ready() -> void:
-    ray_cast_left.rotate(rot)
-	ray_cast_right.rotate(rot)
-    animated_sprite_2d.rotate(rot)
+var speed := 60
+var dir := 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if ray_cast_right.is_colliding():
 		dir = -1
-		animated_sprite_2d.flip_v = true
+		animated_sprite_2d.flip_h = false
 	if ray_cast_left.is_colliding():
 		dir = 1
-		animated_sprite_2d.flip_h = false
+		animated_sprite_2d.flip_h = true
 	position.y += dir * delta * speed
