@@ -1,12 +1,1 @@
-res://scripts/enemy.gd
-res://scripts/enemy_vertical.gd
-res://scripts/coins.gd
-res://scripts/killzone.gd
-res://scripts/level_menu.gd
-res://scripts/platform_fall_slow.gd
 res://scenes/level2.tscn
-res://scenes/platform_fall_slow.tscn
-res://scenes/menu.tscn
-res://scenes/level_menu.tscn
-res://scenes/slime_vertical.right.tscn
-res://scenes/limite plataforma.tscn

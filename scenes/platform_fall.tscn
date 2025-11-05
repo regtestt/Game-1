@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmso0pymhcn51"]
+
+[ext_resource type="PackedScene" uid="uid://cvj84ijxvh4dj" path="res://scenes/limite plataforma.tscn" id="1_pijqj"]
+[ext_resource type="PackedScene" uid="uid://dpjys26pq2pv7" path="res://scenes/platform_fall_slow.tscn" id="2_io46u"]
+
+[node name="Platform_fall" type="Node2D"]
+
+[node name="Limit" parent="." instance=ExtResource("1_pijqj")]
+position = Vector2(0, -6)
+
+[node name="platform" parent="." instance=ExtResource("2_io46u")]
