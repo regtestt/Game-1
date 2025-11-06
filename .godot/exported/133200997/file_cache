@@ -1,0 +1,16 @@
+res://scenes/coin.tscn::f74902f6470e14275691ee9d2762ab53::1761083904::res://.godot/exported/133200997/export-96b2131180b71dd158e52c5527d22dd4-coin.scn
+res://scenes/enemy.tscn::dcb87bb067081273d791aa4458b9511e::1761880403::res://.godot/exported/133200997/export-a930820ec0ab16db6719aff4daa500f9-enemy.scn
+res://scenes/game.tscn::32a328140c1f4a9254dd4a5123d65af0::1761942666::res://.godot/exported/133200997/export-c2a7af834e91ff64325daddf58e45dc0-game.scn
+res://scenes/killzone.tscn::b5adf7b26a9c5ca93a6137fd4d6f82a1::1761083904::res://.godot/exported/133200997/export-494bf1445653c44a49a39c8f8b1ce8d0-killzone.scn
+res://scenes/level1.tscn::21c7961d60085a333dd62d651496a06b::1761880403::res://.godot/exported/133200997/export-f859d0047d3b342253437035700f7078-level1.scn
+res://scenes/level2.tscn::06bf569b272ab52d19fe12dcdc6a229c::1762453163::res://.godot/exported/133200997/export-17e8b8aababe7c943e610798d48e7caf-level2.scn
+res://scenes/level_menu.tscn::dbda9e9ef24cf8989db8cfd269f8046e::1762453163::res://.godot/exported/133200997/export-073998cfb88f1451a51eaa8688f234cd-level_menu.scn
+res://scenes/limite plataforma.tscn::75f67de8a28acbe757f313bd7670bb13::1762309728::res://.godot/exported/133200997/export-95f53c9f43f4e6beb0f8a4a17da3406d-limite plataforma.scn
+res://scenes/menu.tscn::662eec300e4c7f4e1272f92bfb6ad66f::1762453163::res://.godot/exported/133200997/export-1ce5c86e8ca186dcaaeaa8726f1268db-menu.scn
+res://scenes/music.tscn::7db89a7cb60952c6672e95bc646d5ac3::1761083904::res://.godot/exported/133200997/export-bfd8027ae1117ff610be6f2619a76089-music.scn
+res://scenes/platform_1.tscn::b426646871f80777e34b8e9b21f1c875::1761880403::res://.godot/exported/133200997/export-46ee03cf1ec0f7ad32f0167a529bec96-platform_1.scn
+res://scenes/platfrom_w_limit_v.tscn::a6c52b203b65c6b3dda62d3a991450b0::1762453162::res://.godot/exported/133200997/export-ab5076280b903b8c509dcfe7198eb8d6-platfrom_w_limit_v.scn
+res://scenes/player.tscn::83e4c546be4dc5b9d7b1a1e56d431c5c::1761083904::res://.godot/exported/133200997/export-234fb6894ec6226e856ab7f825500d3d-player.scn
+res://scenes/sandbox.tscn::269f5ab86c37a01a43dd1af1ff739e25::1761880403::res://.godot/exported/133200997/export-b3bbc7bbc8dd38a875b1b90056cee454-sandbox.scn
+res://scenes/slime_vertical.right.tscn::48d35b02ec51cfc0f29783d32c0cad53::1762309728::res://.godot/exported/133200997/export-bacb1efc52a4ca6c89f2eb06b5aefce9-slime_vertical.right.scn
+res://default_bus_layout.tres::ac02fb29f15f105ab1b3512d7a164284::1761083903::res://.godot/exported/133200997/export-19246414aa9fb561ced4b8dce477acec-default_bus_layout.res

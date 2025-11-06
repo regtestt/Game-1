@@ -5,10 +5,10 @@
 [ext_resource type="PackedScene" uid="uid://crl7vxdsoriqh" path="res://scenes/player.tscn" id="3_6l4ho"]
 [ext_resource type="FontFile" uid="uid://dui7aab8b2ady" path="res://assets/fonts/PixelOperator8.ttf" id="4_5vgno"]
 [ext_resource type="PackedScene" uid="uid://x6vxnr4vptrm" path="res://scenes/coin.tscn" id="5_q2ywo"]
+[ext_resource type="PackedScene" uid="uid://c00621yryusam" path="res://scenes/platfrom_w_limit_v.tscn" id="6_ewgs2"]
 [ext_resource type="Script" path="res://scripts/coins.gd" id="6_knrre"]
 [ext_resource type="PackedScene" uid="uid://bd467j1r2wqum" path="res://scenes/platform_1.tscn" id="6_owoub"]
 [ext_resource type="PackedScene" uid="uid://cdrvtkfkndm7a" path="res://scenes/killzone.tscn" id="6_pjofm"]
-;[ext_resource type="PackedScene" uid="uid://dmso0pymhcn51" path="res://scenes/platform_fall.tscn" id="7_g6who"]
 [ext_resource type="PackedScene" uid="uid://emmgqoje8rkp" path="res://scenes/slime_vertical.right.tscn" id="9_kcjeo"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_yo2ft"]
@@ -232,44 +232,50 @@ offset_bottom = -28.0
 theme_override_fonts/font = ExtResource("4_5vgno")
 theme_override_font_sizes/font_size = 8
 
-; [node name="platforms" type="Node" parent="."]
+[node name="platforms" type="Node" parent="."]
 
-; [node name="falling platforms" type="Node" parent="platforms"]
+[node name="normal" type="Node" parent="platforms"]
 
-; [node name="Platform_fall" parent="platforms/falling platforms" instance=ExtResource("7_g6who")]
-; position = Vector2(140, -150)
+[node name="platforms_normal platforms#platform 1" parent="platforms/normal" instance=ExtResource("6_owoub")]
+position = Vector2(158, -229)
 
-; [node name="Platform_fall2" parent="platforms/falling platforms" instance=ExtResource("7_g6who")]
-; position = Vector2(194, -113)
+[node name="platforms_normal platforms#platform 2" parent="platforms/normal" instance=ExtResource("6_owoub")]
+position = Vector2(113, -200)
 
-; [node name="Platform_fall3" parent="platforms/falling platforms" instance=ExtResource("7_g6who")]
-; position = Vector2(73, -183)
+[node name="platforms_normal platforms#platform 3" parent="platforms/normal" instance=ExtResource("6_owoub")]
+position = Vector2(76, -162)
 
-; [node name="Platform_fall4" parent="platforms/falling platforms" instance=ExtResource("7_g6who")]
-; position = Vector2(254, -220)
+[node name="platforms_normal platforms#platform 4" parent="platforms/normal" instance=ExtResource("6_owoub")]
+position = Vector2(236, -145)
 
-; [node name="Platform_fall5" parent="platforms/falling platforms" instance=ExtResource("7_g6who")]
-; position = Vector2(150, -220)
+[node name="falling" type="Node" parent="platforms"]
 
-[node name="normal platforms" type="Node" parent="platforms"]
+[node name="Platfrom_w_limit_v" parent="platforms/falling" instance=ExtResource("6_ewgs2")]
+position = Vector2(193, -111)
 
-[node name="platform 1" parent="platforms/normal platforms" instance=ExtResource("6_owoub")]
-position = Vector2(267, -124)
+[node name="Platfrom_w_limit_v2" parent="platforms/falling" instance=ExtResource("6_ewgs2")]
+position = Vector2(235, -218)
 
-[node name="platform 2" parent="platforms/normal platforms" instance=ExtResource("6_owoub")]
-position = Vector2(196, -189)
+[node name="Platfrom_w_limit_v3" parent="platforms/falling" instance=ExtResource("6_ewgs2")]
+position = Vector2(272, -181)
 
-[node name="platform 3" parent="platforms/normal platforms" instance=ExtResource("6_owoub")]
-position = Vector2(234, -150)
-
-[node name="platform 4" parent="platforms/normal platforms" instance=ExtResource("6_owoub")]
-position = Vector2(300, -250)
+[node name="Platfrom_w_limit_v4" parent="platforms/falling" instance=ExtResource("6_ewgs2")]
+position = Vector2(144, -139)
 
 [node name="coins" type="Node" parent="."]
 script = ExtResource("6_knrre")
 
 [node name="coin" parent="coins" instance=ExtResource("5_q2ywo")]
 position = Vector2(186, -47)
+
+[node name="coin2" parent="coins" instance=ExtResource("5_q2ywo")]
+position = Vector2(326, -257)
+
+[node name="coin3" parent="coins" instance=ExtResource("5_q2ywo")]
+position = Vector2(295, -194)
+
+[node name="coin4" parent="coins" instance=ExtResource("5_q2ywo")]
+position = Vector2(41, -179)
 
 [node name="killzone" parent="." instance=ExtResource("6_pjofm")]
 position = Vector2(62, 143)

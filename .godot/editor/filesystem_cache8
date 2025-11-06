@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1762310889
+::res://::1762452305
 default_bus_layout.tres::AudioBusLayout::2189381006037900120::1761083903::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1761943778::0::1::::<><>::
 icon.svg::CompressedTexture2D::1861914746249610846::1761083903::1762310893::1::::<><>::
@@ -7,19 +7,19 @@ menu.gd::GDScript::-1::1761943715::0::1::::<>Control<>::
 README.md::TextFile::-1::1761083903::0::1::::<><>::
 ::res://assets/::1761083903
 LICENSE & CREDITS.txt::TextFile::-1::1761083903::0::1::::<><>::
-::res://assets/fonts/::1761083935
+::res://assets/fonts/::1762310892
 PixelOperator8-Bold.ttf::FontFile::2313368963697675794::1761083903::1762310892::1::::<><>::
 PixelOperator8.ttf::FontFile::8581496892687526982::1761083903::1762310892::1::::<><>::
-::res://assets/music/::1761083935
+::res://assets/music/::1762310892
 time_for_adventure.mp3::AudioStreamMP3::1667107105899926170::1761083903::1762310892::1::::<><>::
-::res://assets/sounds/::1761083937
+::res://assets/sounds/::1762310894
 coin.wav::AudioStreamWAV::780667150660396346::1761083903::1762310894::1::::<><>::
 explosion.wav::AudioStreamWAV::3159433340197178863::1761083903::1762310894::1::::<><>::
 hurt.wav::AudioStreamWAV::3254455365244627408::1761083903::1762310894::1::::<><>::
 jump.wav::AudioStreamWAV::7307332403015622411::1761083903::1762310894::1::::<><>::
 power_up.wav::AudioStreamWAV::6491920357293037617::1761083903::1762310894::1::::<><>::
 tap.wav::AudioStreamWAV::2555376220820814000::1761083903::1762310894::1::::<><>::
-::res://assets/sprites/::1761083936
+::res://assets/sprites/::1762310893
 3819284.png::CompressedTexture2D::132260995281584182::1761083903::1762310893::1::::<><>::
 coin.png::CompressedTexture2D::5117352098751419127::1761083903::1762310893::1::::<><>::
 fruit.png::CompressedTexture2D::6537036942240507568::1761083903::1762310893::1::::<><>::
@@ -28,7 +28,7 @@ platforms.png::CompressedTexture2D::3760314269784480015::1761083903::1762310893:
 slime_green.png::CompressedTexture2D::2344079795558232295::1761083903::1762310893::1::::<><>::
 slime_purple.png::CompressedTexture2D::6588688030213430947::1761083903::1762310893::1::::<><>::
 world_tileset.png::CompressedTexture2D::3966398620490825338::1761083903::1762310893::1::::<><>::
-::res://assets/ui/::1761083936
+::res://assets/ui/::1762310893
 00.png::CompressedTexture2D::4424640291729710842::1761083903::1762310893::1::::<><>::
 01.png::CompressedTexture2D::4494109468877505152::1761083903::1762310893::1::::<><>::
 02.png::CompressedTexture2D::7703047677599451325::1761083903::1762310893::1::::<><>::
@@ -43,7 +43,7 @@ License.txt::TextFile::-1::1761083903::0::1::::<><>::
 Thank You for Purchasing!.txt::TextFile::-1::1761083903::0::1::::<><>::
 ::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/::1761083903
 ::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Aseprite/::1761083902
-::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/::1761083937
+::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Sprites/::1762310894
 UI_Flat_Banner01a.png::CompressedTexture2D::2811550240786743225::1761083902::1762310893::1::::<><>::
 UI_Flat_Banner02a.png::CompressedTexture2D::854640133131537391::1761083902::1762310893::1::::<><>::
 UI_Flat_Banner03a.png::CompressedTexture2D::4874920031606147185::1761083902::1762310893::1::::<><>::
@@ -142,27 +142,28 @@ UI_Flat_ToggleOn02a.png::CompressedTexture2D::7655542197502619420::1761083903::1
 UI_Flat_ToggleOn03a.png::CompressedTexture2D::3763176626733538308::1761083903::1762310893::1::::<><>::
 UI_Flat_ToggleRightOff01a.png::CompressedTexture2D::7459293616704331841::1761083903::1762310893::1::::<><>::
 UI_Flat_ToggleRightOn01a.png::CompressedTexture2D::2760311310237319729::1761083903::1762310893::1::::<><>::
-::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/::1761083935
+::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/::1762310893
 Spritesheet_UI_Flat.png::CompressedTexture2D::3463157185607002673::1761083903::1762310893::1::::<><>::
 Spritesheet_UI_Flat_Animated.png::CompressedTexture2D::3909289199481832456::1761083903::1762310893::1::::<><>::
-::res://scenes/::1762309891
+::res://scenes/::1762374409
+_platform_fall.tscn::PackedScene::8039582482535352906::1762311294::0::1::::<><>::uid://cvj84ijxvh4dj::::res://scenes/limite plataforma.tscn<>uid://dpjys26pq2pv7::::res://scenes/platform_fall_slow.tscn
+_platform_fall_slow.tscn::PackedScene::8232164924276392990::1762310654::0::1::::<><>::uid://dpjys26pq2pv7::::res://scenes/platform_fall_slow.tscn
 coin.tscn::PackedScene::1679655954570035650::1761083904::0::1::::<><>::uid://ce55bn4wi6xml::::res://assets/sprites/coin.png<>res://scripts/coin.gd<>uid://lefqd3y8jlqw::::res://assets/sounds/coin.wav
 enemy.tscn::PackedScene::276462170551457957::1761880403::0::1::::<><>::res://scripts/enemy.gd<>uid://c04uy188k68qh::::res://assets/sprites/slime_purple.png<>uid://cdrvtkfkndm7a::::res://scenes/killzone.tscn
 game.tscn::PackedScene::4812575194743670626::1761942666::0::1::::<><>::uid://dra6fpkk3f65u::::res://scenes/menu.tscn
 killzone.tscn::PackedScene::5019811840480987224::1761083904::0::1::::<><>::res://scripts/killzone.gd
 level1.tscn::PackedScene::6930824694806251009::1761880403::0::1::::<><>::res://scripts/game_manager.gd<>uid://bwrmagxh5bp27::::res://assets/sprites/world_tileset.png<>uid://crl7vxdsoriqh::::res://scenes/player.tscn<>uid://dui7aab8b2ady::::res://assets/fonts/PixelOperator8.ttf<>uid://bd467j1r2wqum::::res://scenes/platform_1.tscn<>res://scripts/coins.gd<>uid://x6vxnr4vptrm::::res://scenes/coin.tscn<>uid://cdrvtkfkndm7a::::res://scenes/killzone.tscn<>uid://d66j6bmt82u0::::res://scenes/enemy.tscn
-level2.tscn::PackedScene::6434878433419946674::1762309728::0::1::::<><>::res://scripts/game_manager.gd<>uid://bwrmagxh5bp27::::res://assets/sprites/world_tileset.png<>uid://crl7vxdsoriqh::::res://scenes/player.tscn<>uid://dui7aab8b2ady::::res://assets/fonts/PixelOperator8.ttf<>uid://x6vxnr4vptrm::::res://scenes/coin.tscn<>res://scripts/coins.gd<>uid://bd467j1r2wqum::::res://scenes/platform_1.tscn<>uid://cdrvtkfkndm7a::::res://scenes/killzone.tscn<>uid://dmso0pymhcn51::::res://scenes/platform_fall.tscn<>uid://emmgqoje8rkp::::res://scenes/slime_vertical.right.tscn
+level2.tscn::PackedScene::6434878433419946674::1762374409::0::1::::<><>::res://scripts/game_manager.gd<>uid://bwrmagxh5bp27::::res://assets/sprites/world_tileset.png<>uid://crl7vxdsoriqh::::res://scenes/player.tscn<>uid://dui7aab8b2ady::::res://assets/fonts/PixelOperator8.ttf<>uid://x6vxnr4vptrm::::res://scenes/coin.tscn<>uid://c00621yryusam::::res://scenes/platfrom_w_limit_v.tscn<>res://scripts/coins.gd<>uid://bd467j1r2wqum::::res://scenes/platform_1.tscn<>uid://cdrvtkfkndm7a::::res://scenes/killzone.tscn<>uid://emmgqoje8rkp::::res://scenes/slime_vertical.right.tscn
 level_menu.tscn::PackedScene::3298692153243353257::1762309728::0::1::::<><>::uid://bpltxs7xupg5f::::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat.png<>res://scripts/level_menu.gd<>uid://bvxxol105qhg7::::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat_Animated.png<>uid://77u34i8xjkxe::::res://assets/fonts/PixelOperator8-Bold.ttf
 limite plataforma.tscn::PackedScene::6267442367519382923::1762309728::0::1::::<><>::
 menu.tscn::PackedScene::4926252307761526099::1762309728::0::1::::<><>::res://menu.gd<>uid://bpltxs7xupg5f::::res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat.png<>uid://77u34i8xjkxe::::res://assets/fonts/PixelOperator8-Bold.ttf
 music.tscn::PackedScene::3412391655851484868::1761083904::0::1::::<><>::uid://x0tamdnem2mw::::res://assets/music/time_for_adventure.mp3
 platform_1.tscn::PackedScene::2658794055340082036::1761880403::0::1::::<><>::uid://bttr3dubrywjv::::res://assets/sprites/platforms.png
-platform_fall.tscn::PackedScene::8039582482535352906::1762310648::0::1::::<><>::uid://cvj84ijxvh4dj::::res://scenes/limite plataforma.tscn<>uid://dpjys26pq2pv7::::res://scenes/platform_fall_slow.tscn
-platform_fall_slow.tscn::PackedScene::8232164924276392990::1762310654::0::1::::<><>::uid://dpjys26pq2pv7::::res://scenes/platform_fall_slow.tscn
+platfrom_w_limit_v.tscn::PackedScene::6581103748887389588::1762374409::0::1::::<><>::uid://bd467j1r2wqum::::res://scenes/platform_1.tscn<>res://scripts/platform_fall_slow.gd
 player.tscn::PackedScene::5990741523476630703::1761083904::0::1::::<><>::uid://von7r7i4ldmt::::res://assets/sprites/knight.png<>res://scripts/player_movement.gd
 sandbox.tscn::PackedScene::8014922406011871138::1761880403::0::1::::<><>::res://scripts/game_manager.gd<>uid://bwrmagxh5bp27::::res://assets/sprites/world_tileset.png<>uid://crl7vxdsoriqh::::res://scenes/player.tscn<>uid://dui7aab8b2ady::::res://assets/fonts/PixelOperator8.ttf<>uid://bd467j1r2wqum::::res://scenes/platform_1.tscn<>res://scripts/coins.gd<>uid://x6vxnr4vptrm::::res://scenes/coin.tscn<>uid://cdrvtkfkndm7a::::res://scenes/killzone.tscn<>uid://d66j6bmt82u0::::res://scenes/enemy.tscn
 slime_vertical.right.tscn::PackedScene::306268088693919119::1762309728::0::1::::<><>::uid://d66j6bmt82u0::::res://scenes/enemy.tscn<>res://scripts/enemy_vertical.gd
-::res://screenchots/::1761083935
+::res://screenchots/::1762310893
 1.png::CompressedTexture2D::6210754854656498688::1761083904::1762310893::1::::<><>::
 2.png::CompressedTexture2D::7570648647571506615::1761083904::1762310893::1::::<><>::
 3.png::CompressedTexture2D::4251890810179276367::1761083904::1762310893::1::::<><>::
@@ -174,5 +175,5 @@ enemy_vertical.gd::GDScript::-1::1762181737::0::1::::<>Node2D<>::
 game_manager.gd::GDScript::-1::1761877893::0::1::::<>Node<>::
 killzone.gd::GDScript::-1::1761083904::0::1::::<>Area2D<>::
 level_menu.gd::GDScript::-1::1761943639::0::1::::<>Control<>::
-platform_fall_slow.gd::GDScript::-1::1762196978::0::1::::<>AnimatableBody2D<>::
+platform_fall_slow.gd::GDScript::-1::1762374459::0::1::::<>AnimatableBody2D<>::
 player_movement.gd::GDScript::-1::1761083904::0::1::::<>CharacterBody2D<>::

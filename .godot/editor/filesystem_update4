@@ -1,1 +1,6 @@
 res://scenes/level2.tscn
+res://scenes/platfrom_w_limit_v.tscn
+res://scenes/menu.tscn
+res://scenes/level_menu.tscn
+res://scripts/player_movement.gd
+res://scripts/platform_fall_slow.gd
