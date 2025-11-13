@@ -1,6 +1,11 @@
 res://scenes/level2.tscn
-res://scenes/platfrom_w_limit_v.tscn
-res://scenes/menu.tscn
-res://scenes/level_menu.tscn
+res://scenes/platfrom_w_limit_right.tscn
+res://scenes/platfrom_w_limit_v_down.tscn
+res://scenes/platfrom_w_limit_left.tscn
+res://scenes/platfrom_updown_nostop.tscn
+res://scenes/platfrom_updown_stop.tscn
+res://scripts/game_manager.gd
+res://scripts/level_menu.gd
 res://scripts/player_movement.gd
-res://scripts/platform_fall_slow.gd
+res://menu.gd
+res://scenes/menu.tscn

@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://ccgkwkcs5hncd"]
 
-[ext_resource type="Script" path="res://menu.gd" id="1_7gyms"]
+[ext_resource type="Script" path="res://scripts/menu.gd" id="1_7gyms"]
 [ext_resource type="Texture2D" uid="uid://bpltxs7xupg5f" path="res://Complete_UI_Essential_Pack_Free/01_Flat_Theme/Spritesheets/Spritesheet_UI_Flat.png" id="2_7lpjy"]
 [ext_resource type="FontFile" uid="uid://77u34i8xjkxe" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_g1bx2"]
 

@@ -10,10 +10,20 @@ var dir := 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+#	print(animated_sprite_2d.flip_h)
 	if ray_cast_right.is_colliding():
 		dir = -1
-		animated_sprite_2d.flip_h = false
+		print(flip())
+		animated_sprite_2d.flip_h = flip()
+		
 	if ray_cast_left.is_colliding():
 		dir = 1
-		animated_sprite_2d.flip_h = true
+		print(flip())
+		animated_sprite_2d.flip_h = flip()
+
 	position.y += dir * delta * speed
+
+func flip() -> bool : 
+	var a := animated_sprite_2d.flip_h != true
+#	print(a)
+	return a

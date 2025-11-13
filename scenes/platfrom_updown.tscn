@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://w5tb3gmqmt0a"]
+
+[ext_resource type="PackedScene" uid="uid://bd467j1r2wqum" path="res://scenes/platform_1.tscn" id="1_ue0px"]
+[ext_resource type="Script" path="res://scripts/platform_fall_slow.gd" id="2_84w0j"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kv4md"]
+size = Vector2(29, 7)
+
+[node name="Platfrom_w_limit_v" type="Node2D"]
+
+[node name="platform" parent="." instance=ExtResource("1_ue0px")]
+collision_layer = 17
+script = ExtResource("2_84w0j")
+
+[node name="Area2D" type="Area2D" parent="platform"]
+collision_mask = 2
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="platform/Area2D"]
+position = Vector2(-0.5, -3.5)
+shape = SubResource("RectangleShape2D_kv4md")
+
+[node name="limit" type="RayCast2D" parent="platform"]
+target_position = Vector2(0, -6)
+collision_mask = 16
+
+[node name="floor" type="RayCast2D" parent="platform"]
+target_position = Vector2(0, 6)
+
+[connection signal="body_shape_entered" from="platform/Area2D" to="platform" method="_on_area_2d_body_shape_entered"]
+[connection signal="body_shape_exited" from="platform/Area2D" to="platform" method="_on_area_2d_body_shape_exited"]

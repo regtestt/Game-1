@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cjwfi6co3mjb3"]
+
+[ext_resource type="PackedScene" uid="uid://bd467j1r2wqum" path="res://scenes/platform_1.tscn" id="1_y5ibd"]
+[ext_resource type="Script" path="res://scripts/platform_move_updown.gd" id="2_5rgb7"]
+
+[node name="Platfrom_w_limit_v" type="Node2D"]
+
+[node name="platform" parent="." instance=ExtResource("1_y5ibd")]
+collision_layer = 17
+script = ExtResource("2_5rgb7")
+
+[node name="up" type="RayCast2D" parent="platform"]
+target_position = Vector2(0, -6)
+
+[node name="down" type="RayCast2D" parent="platform"]
+target_position = Vector2(0, 6)

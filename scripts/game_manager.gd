@@ -12,6 +12,9 @@ func _process(_delta):
 ##	print(label.visible)
 ##	print(coins.noCoins())
 	
+	if Input.is_action_just_pressed("esq"):
+		get_tree().change_scene_to_file("res://scenes/level_menu.tscn")
+
 	label.text = 'TU TIEMPO FUE: ' + str(m) + ":" + str(s - m*60) + ":" + str(ms - s*1000)		
 	if !coins.noCoins(): 
 		label.visible = false
